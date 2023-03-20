@@ -12,6 +12,9 @@ print("Hello User")
 time.sleep(0.5)
 #asks user for name, saves as username 
 username = input("What is your Name? ")
+time.sleep(0.5)
+print("sample text")
+time.sleep(0.5)
 #say that the quiz is starting, prosent question[qanum]
 while qanum <= 4:
  userasr = input(Question[qanum])
@@ -19,14 +22,14 @@ while qanum <= 4:
     print("You're Correct!")
     points += 1
     qanum += 1
-    if qanum == 3: 
+    if qanum == len(Answer): 
      break
     else:
      continue
  else:
-   print("That Is Incorrect, the answer was",Answer[qanum],"!")
+   print("Sorry, That Is Incorrect")
    qanum += 1
-   if qanum == 3: 
+   if qanum == len(Answer): 
      break
    else:
     continue
