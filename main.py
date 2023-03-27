@@ -1,4 +1,4 @@
-#this adds OS, which is used to clear the console
+#this adds OS, which is used to clear the console when to code resets
 import os
 #this is the list for the questions.
 Question = ["How Many Gyms are there in the school? ","What class block is the science block? ","What is the name of the area between B Block, The hall and the admin building? ","Where is The Tennis Corts? ","What subject is studied in G Block? ","What do you learn in K block? ","What do you learn in M block? ","What block do you learn Social Studies? ","What do you learn in A block? ","What is the class number for referral? "]
@@ -16,7 +16,7 @@ def no_function():
   print("That Is Incorrect!")
 #this is the varible for how many point you have 
 points = 0
-#this function removes trailing .0 from percentages
+#this function removes trailing .0 from the percentage of suscess rate
 def formatNumber(dec2):
   if dec2 % 1 == 0:
     return int(dec2)
@@ -69,11 +69,13 @@ while loop == "yes":
  print("You Have Finshed The Quiz.")
  time.sleep(0.5)
  print("\n")
+# this shows how many points the user got out of how many questions there are
  print(username,",You Got ",points,"out of",len(Question),"Questions Correct.")
  dec1 = points / len(Answer)
  dec2 = dec1 * 100
  time.sleep(0.5)
  print("\n")
+# this shows the percentage of what questions the user correct to incorrect
  print("Thats a",formatNumber(dec2),"% success rate ")
  time.sleep(0.5)
  print("\n")
