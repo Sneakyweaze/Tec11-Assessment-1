@@ -66,7 +66,7 @@ while loop == "yes":
     continue
 
 # when out of questions, the code will show score and sucess rate and ask to play again.
- print("You Have Finshed The Quiz.")
+ print("You Have Finished The Quiz.")
  time.sleep(0.5)
  print("\n")
 # this shows how many points the user got out of how many questions there are
