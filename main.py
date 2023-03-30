@@ -1,22 +1,22 @@
 #this adds OS, which is used to clear the console when to code resets
 import os
-#this is the list for the questions.
-Question = ["How Many Gyms are there in the school? ","What class block is the science block? ","What is the name of the area between B Block, The hall and the admin building? ","Where is The Tennis Courts? ","What subject is studied in G Block? ","What do you learn in K block? ","What do you learn in M block? ","What block do you learn Social Studies? ","What do you learn in A block? ","What is the class number for referral? "]
-#this list is all the answers for the questions.
+#This is the list for the questions.
+Question = ["How Many Gyms are there in the school? ","What class block is the science block? ","What is the name of the area between B Block, The hall and the admin building? ","Where are The Tennis Courts? ","What subject is studied in G Block? ","What do you learn in K block? ","What do you learn in M block? ","What block do you learn Social Studies? ","What do you learn in A block? ","What is the class number for referral? "]
+#This list is all the answers for the questions.
 Answer  = ["three","f block","a quad","behind gym one","english","languages","music","d block","art","f eleven"]
-#this is the varible for what question/answer is
+#this is the variable for what question/answer is
 qanumber = 0 
-#this is the varible for if the loop is on or not
+#this is the variable for if the loop is on or not
 loop = "yes"
-#this is the function that says somtheing is correct
+#this is the function that says something is correct
 def yes_function():
   print("That Is Correct!")
-#this is the function that says somtheing is incorrect
+#this is the function that says something is incorrect
 def no_function():
   print("That Is Incorrect!")
-#this is the varible for how many point you have 
+#this is the variable for how many point you have 
 points = 0
-#this function removes trailing .0 from the percentage of suscess rate
+#this function removes trailing .0 from the percentage of success rate
 def formatNumber(dec2):
   if dec2 % 1 == 0:
     return int(dec2)
@@ -42,7 +42,7 @@ while loop == "yes":
   time.sleep(0.5)
   userasr = input(Question[qanumber])
 #if question is correct,the code adds one to points and qanumber: continues loop
-  if userasr == Answer[qanumber]:
+  if userasr.lower() == Answer[qanumber]:
     print("\n")
     time.sleep(0.5)
     yes_function()
@@ -53,7 +53,7 @@ while loop == "yes":
      time.sleep(0.5)
     else:
      continue
-#if question is in correct,the code dosen't adds one to points and adds one to qanumber: continues loop
+#if question is incorrect,the code doesn't adds one to points and adds one to qanumber: continues loop
   else:
    print("\n")
    time.sleep(0.5)
@@ -65,7 +65,7 @@ while loop == "yes":
    else:
     continue
 
-# when out of questions, the code will show score and sucess rate and ask to play again.
+# When out of questions, the code will show score and success rate and ask to play again.
  print("You Have Finished The Quiz.")
  time.sleep(0.5)
  print("\n")
@@ -90,7 +90,7 @@ while loop == "yes":
   time.sleep(1)
 # this clears the console
   os.system('clear')
-  time.sleep(1)
+  time.sleep(0.5)
   continue 
 #if the user responds with something that isn't yes, the code will end.
  else:
