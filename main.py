@@ -46,22 +46,18 @@ while loop == "yes":
  time.sleep(0.5) 
  print("\n")
 
-#this is a secret, don't read this.
- if username == "Ewqasd346":
-  print("Nice Try, No Secret code Here.")
- else: 
 # This says the rules of the quiz
-  print("Please don't use numbers in your answers")
-  time.sleep(0.5)
+ print("Please don't use numbers in your answers")
+ time.sleep(0.5)
   
 #say that the quiz is starting, prosent question[qanumber]
-  while qanumber != len(Answer) + 1:
+ while qanumber != len(Answer) + 1:
    print("\n")
    time.sleep(0.5)
    userasr = input(Question[qanumber])
    
 #if question is correct,the code adds one to points and qanumber: continues loop
-  if userasr.lower() == Answer[qanumber]:
+   if userasr.lower() == Answer[qanumber]:
     print("\n")
     time.sleep(0.5)
     yes_function()
@@ -74,11 +70,11 @@ while loop == "yes":
      continue
       
 #if question is incorrect,the code doesn't adds one to points and adds one to qanumber: continues loop
-  else:
-   print("\n")
-   time.sleep(0.5)
-   no_function()
-   qanumber += 1
+   else:
+    print("\n")
+    time.sleep(0.5)
+    no_function()
+    qanumber += 1
    if qanumber == len(Answer): 
      break
      time.sleep(0.5)
@@ -121,4 +117,12 @@ while loop == "yes":
  else:
   time.sleep(0.5)
   print("\n")
-  print("good bye")
+  print("good bye",username)
+
+#this is a secret, don't read this.
+ if username == "rats":
+   while username == "rats":
+    print("Rats?, rats make me crazy. Crazy? I was crazy once. They locked me in a room. A rubber room. A rubber room with rats.")
+    time.sleep(0.3)
+ else: 
+  print("")
