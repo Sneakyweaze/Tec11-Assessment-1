@@ -7,8 +7,11 @@ Question = ["How Many Gyms are there in the school? ","What class block is the s
 #This list is all the answers for the questions.
 Answer  = ["three","f block","a quad","behind gym one","english","languages","music","d block","art","f eleven"]
 
-#This list is all the answers for the questions if you type in numbers.
-numAnswer  = ["3","f block","a quad","behind gym 1","english","languages","music","d block","art","f 11"]
+#This list is all the secondary answers for the questions.
+numAnswer  = ["3","f","a quad","behind gym 1","english","language","music","d","art","f 11"]
+
+#This list is all the other answers for the questions.
+numAnswer  = ["3","f","a quad","behind gym 1","english","language","music","d","art","f11"]
 
 #this is the variable for what question/answer is
 qanumber = 0 
