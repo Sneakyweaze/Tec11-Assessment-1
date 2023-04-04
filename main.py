@@ -106,7 +106,7 @@ while loop == "yes":
  loop = input("do you want to play again? ")
   
 #if the user responds with yes, the code will reset.
- if loop == "yes":
+ if loop.lower() == "yes":
   qanumber = 0
   points = 0
   time.sleep(0.5)
