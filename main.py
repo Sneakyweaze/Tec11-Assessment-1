@@ -7,11 +7,11 @@ Question = ["How Many Gyms are there in the school? ","What class block is the s
 #This list is all the answers for the questions.
 Answer  = ["three","f block","a quad","behind gym one","english","languages","music","d block","art","f eleven"]
 
-#This list is all the secondary answers for the questions.
-numAnswer  = ["3","f","a quad","behind gym 1","english","language","music","d","art","f 11"]
+#This list is all the secondary answers for the questions. questions that are repeted to stop people from breaking the code
+otherAnswer  = ["3","f","a quad","behind gym 1","english","language","music","d","art","f 11"]
 
-#This list is all the other answers for the questions.
-numAnswer  = ["3","f","a quad","behind gym 1","english","language","music","d","art","f11"]
+#This list is all the other answers for the questions. questions that are repeted to stop people from breaking the code
+other2Answer  = ["3","f","a quad","behind gym 1","english","languages","music","d","art","f11"]
 
 #this is the variable for what question/answer is
 qanumber = 0 
@@ -63,7 +63,7 @@ while loop == "yes":
    userasr = input(Question[qanumber])
    
 #if question is correct,the code adds one to points and qanumber: continues loop
-   if userasr.lower() == Answer[qanumber] or userasr.lower() == numAnswer[qanumber] :
+   if userasr.lower() == Answer[qanumber] or userasr.lower() == otherAnswer[qanumber] or userasr.lower() == other2Answer[qanumber]:
     print("\n")
     time.sleep(0.5)
     yes_function()
