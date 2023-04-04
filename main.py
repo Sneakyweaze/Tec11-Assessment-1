@@ -7,6 +7,9 @@ Question = ["How Many Gyms are there in the school? ","What class block is the s
 #This list is all the answers for the questions.
 Answer  = ["three","f block","a quad","behind gym one","english","languages","music","d block","art","f eleven"]
 
+#This list is all the answers for the questions if you type in numbers.
+numAnswer  = ["3","f block","a quad","behind gym 1","english","languages","music","d block","art","f 11"]
+
 #this is the variable for what question/answer is
 qanumber = 0 
 
@@ -47,7 +50,7 @@ while loop == "yes":
  print("\n")
 
 # This says the rules of the quiz
- print("Please don't use numbers in your answers")
+ print(" Lets Begin")
  time.sleep(0.5)
   
 #say that the quiz is starting, prosent question[qanumber]
@@ -57,7 +60,7 @@ while loop == "yes":
    userasr = input(Question[qanumber])
    
 #if question is correct,the code adds one to points and qanumber: continues loop
-   if userasr.lower() == Answer[qanumber]:
+   if userasr.lower() == Answer[qanumber] or userasr.lower() == numAnswer[qanumber] :
     print("\n")
     time.sleep(0.5)
     yes_function()
